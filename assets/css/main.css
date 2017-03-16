@@ -194,12 +194,7 @@
 		position: fixed;
 		top: 0;
 	}
-  .no-scroll {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
+
 	@-moz-keyframes bg {
 		0% {
 			-moz-transform: translate3d(0,0,0);
