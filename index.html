@@ -1,15 +1,25 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111539266-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111539266-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-111539266-1');
-</script>
+        gtag('config', 'UA-111539266-1');
+    </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "95e9d335-7726-41c8-ba82-f313efff6c14",
+            });
+        });
+    </script>
     <title>Nikhil Khanna</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +30,7 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
 </head>
+
 <body class="loading">
     <div id="wrapper">
         <div id="bg"></div>
@@ -31,13 +42,41 @@
                 <p>Protagonist &nbsp;&bull;&nbsp; Software Engineer &nbsp;&bull;&nbsp; Adrenaline Junkie</p>
                 <nav>
                     <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/TheNikhilKBlog" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/TheNikhilK/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a target="_blank" href="https://www.twitter.com/TheNikhilK/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>    
-                        <li><a target="_blank" href="http://blog.thenikhilk.com" class="icon fa-television"><span class="label">Github</span></a></li>                        
-                        <li><a target="_blank" href="https://github.com/thenikhilk/" class="icon fa-github"><span class="label">Github</span></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/thenikhilk/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a target="_blank" href="https://goo.gl/forms/6xcs9gkw4OZ8fA5L2" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/TheNikhilKBlog" class="icon fa-facebook">
+                                <span class="label">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/TheNikhilK/" class="icon fa-instagram">
+                                <span class="label">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.twitter.com/TheNikhilK/" class="icon fa-twitter">
+                                <span class="label">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://blog.thenikhilk.com" class="icon fa-television">
+                                <span class="label">Github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/thenikhilk/" class="icon fa-github">
+                                <span class="label">Github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/thenikhilk/" class="icon fa-linkedin">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://goo.gl/forms/6xcs9gkw4OZ8fA5L2" class="icon fa-envelope-o">
+                                <span class="label">Email</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
