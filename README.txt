@@ -1,4 +1,4 @@
-Nikhil Khanna
+Nikhil Khanna @TheNikhilK
 Protagonist, on a journey like no other
 .
 Telling my #stories through #pictures
