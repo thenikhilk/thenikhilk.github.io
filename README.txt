@@ -1,8 +1,8 @@
-Nikhil Khanna @TheNikhilK
+# Nikhil Khanna
 Protagonist, on a journey like no other
 .
-Telling my #stories through #pictures
+Telling my stories 📰 through pictures 🖼️
 .
-Trying to post frequently from my #journey in 🌏
+Posting frequently from my journey in this world 🌏
 .
-Explore more at: http://www.TheNikhilK.com
+Explore more [TheNikhilK.com](TheNikhilK.com)
