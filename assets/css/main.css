@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.gstatic.com/s/rubik/v7/p_PvaTv0YzIEJlEVv30xK6CWcynf_cDxXwCLxiixG1c.woff2");
 @import url("font-awesome.min.css");
 /* Reset */
 
@@ -52,8 +52,8 @@
 /* Basic */
 
 	body, input, select, textarea {
-		color: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		color: #1565C0;
+		font-family: Rubik,Helvetica,Arial,sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
@@ -61,7 +61,7 @@
 	}
 
 	body {
-		background: #fff;
+		background: #1565C0;
 		overflow: hidden;
 	}
 
@@ -179,7 +179,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #A874BE url("images/bg.jpg") bottom left;
+		background: #F4F6F8 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -628,7 +628,7 @@
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #fff;
+					border: solid 1px #1565C0;
 					display: block;
 					font-size: 1.75em;
 					height: 2.5em;
@@ -644,8 +644,8 @@
 				}
 
 					#header nav a:hover:before {
-						background-color: rgba(255, 255, 255, 0.175);
-						color: #fff;
+						background-color: #1565C0;
+						color: #F4F6F8;
 					}
 
 				#header nav a:active {
@@ -654,8 +654,8 @@
 				}
 
 					#header nav a:active:before {
-						background-color: rgba(255, 255, 255, 0.35);
-						color: #fff;
+						background-color:#1565C0;
+						color: #F4F6F8;
 					}
 
 				#header nav a span {
