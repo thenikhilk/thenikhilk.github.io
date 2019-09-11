@@ -108,21 +108,12 @@
         window.onorientationchange = function () { document.body.scrollTop = 0; }
     </script>
     <script>
-        // Prompt A2HS
-        window.addEventListener('beforeinstallprompt', (e) => {
+         // Prompt A2HS
+         window.addEventListener('beforeinstallprompt', (e) => {
             // Prevent Chrome 67 and earlier from automatically showing the prompt
             e.preventDefault();
             // Show the prompt
-            e.prompt();
-            // Wait for the user to respond to the prompt
-            e.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('App installed from A2HS prompt');
-                } else {
-                    console.log('User dismissed the A2HS prompt');
-                }
-                deferredPrompt = null;
-            });
+            e.prompt();            
         });
     </script>
 </body>
