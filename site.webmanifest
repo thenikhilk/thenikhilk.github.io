@@ -16,5 +16,5 @@
     "theme_color": "#1565c0",
     "background_color": "#1565c0",
     "start_url": "https://thenikhilk.com/",
-    "display": "standalone"
+    "display": "fullscreen"
 }
