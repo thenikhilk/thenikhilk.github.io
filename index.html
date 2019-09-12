@@ -108,12 +108,17 @@
         window.onorientationchange = function () { document.body.scrollTop = 0; }
     </script>
     <script>
-         // Prompt A2HS
-         window.addEventListener('beforeinstallprompt', (e) => {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/assets/js/sw.js')
+                .then(function () { console.log("Service Worker Registered"); });
+        }
+        // Prompt A2HS
+        window.addEventListener('beforeinstallprompt', (e) => {
             // Prevent Chrome 67 and earlier from automatically showing the prompt
             e.preventDefault();
             // Show the prompt
-            e.prompt();            
+            e.prompt();
         });
     </script>
 </body>
