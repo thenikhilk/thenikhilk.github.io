@@ -1,7 +1,7 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("//fonts.googleapis.com/css?family=Rubik:200,300,400,600,700,800&lang=en");
 @import url("font-awesome.min.css");
 
 /*
@@ -46,7 +46,8 @@
 
 	body, input, select, textarea {
 		color: _palette(fg);
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: Rubik,Helvetica,Arial,sans-serif;
+		font-display: auto;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;

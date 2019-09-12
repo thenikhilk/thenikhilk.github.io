@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
     <title>Nikhil Khanna | Protagonist, on a journey like no other</title>
@@ -53,42 +53,49 @@
                 <nav>
                     <ul>
                         <li>
-                            <a target="_blank" href="https://www.thenikhilk.com" class="icon fa-globe">
-                                <span class="label">Site</span>
+                            <a target="_blank" href="https://www.thenikhilk.com" class="icon fa-globe" rel="noopener"
+                                aria-label="Website">
+                                <span class="label">Website</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.facebook.com/TheNikhilKBlog" class="icon fa-facebook">
+                            <a target="_blank" href="https://www.facebook.com/TheNikhilKBlog" class="icon fa-facebook"
+                                rel="noopener" aria-label="Facebook">
                                 <span class="label">Facebook</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.instagram.com/TheNikhilK/" class="icon fa-instagram">
+                            <a target="_blank" href="https://www.instagram.com/TheNikhilK/" class="icon fa-instagram"
+                                rel="noopener" aria-label="Instagram">
                                 <span class="label">Instagram</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.twitter.com/TheNikhilK/" class="icon fa-twitter">
+                            <a target="_blank" href="https://www.twitter.com/TheNikhilK/" class="icon fa-twitter"
+                                rel="noopener" aria-label="Twitter">
                                 <span class="label">Twitter</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/thenikhilk/" class="icon fa-linkedin">
+                            <a target="_blank" href="https://www.linkedin.com/in/thenikhilk/" class="icon fa-linkedin"
+                                rel="noopener" aria-label="LinkedIn">
                                 <span class="label">LinkedIn</span>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://github.com/thenikhilk/" class="icon fa-github">
+                            <a target="_blank" href="https://github.com/thenikhilk/" class="icon fa-github"
+                                rel="noopener" aria-label="Github">
                                 <span class="label">Github</span>
                             </a>
                         </li>
                         <!-- <li>
-                            <a target="_blank" href="https://www.youtube.com/channel/UCFJ1XbDWLAtmJdbiMqZfKhg" class="icon fa-youtube-play">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCFJ1XbDWLAtmJdbiMqZfKhg" class="icon fa-youtube-play" rel="noopener" aria-label="YouTube">
                                 <span class="label">YouTube</span>
                             </a>
                         </li>-->
                         <li>
-                            <a target="_blank" href="mailto:nikhil.khanna@thenikhilk.com" class="icon fa-envelope-o">
+                            <a target="_blank" href="mailto:nikhil.khanna@thenikhilk.com" class="icon fa-envelope-o"
+                                rel="noopener" aria-label="Email">
                                 <span class="label">Email</span>
                             </a>
                         </li>
@@ -110,13 +117,16 @@
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
-                .register('/assets/js/sw.js')
+                .register('/sw.js')
                 .then(function () { console.log("Service Worker Registered"); });
         }
+        let deferredPrompt;
         // Prompt A2HS
         window.addEventListener('beforeinstallprompt', (e) => {
             // Prevent Chrome 67 and earlier from automatically showing the prompt
             e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
             // Show the prompt
             e.prompt();
         });

@@ -1,7 +1,10 @@
 self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open('thenikhilk').then(function (cache) {
-            return cache.addAll([]);
+            return cache.addAll([
+                '/',
+                '/index.hrml'
+            ]);
         })
     );
 });

@@ -54,6 +54,7 @@
 	body, input, select, textarea {
 		color: #1565C0;
 		font-family: Rubik,Helvetica,Arial,sans-serif;
+		font-display: auto;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
@@ -98,6 +99,7 @@
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
+			font-display: auto;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
