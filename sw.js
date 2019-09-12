@@ -3,7 +3,7 @@ self.addEventListener('install', function (e) {
         caches.open('thenikhilk').then(function (cache) {
             return cache.addAll([
                 '/',
-                '/index.hrml'
+                '/index.html'
             ]);
         })
     );
