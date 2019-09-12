@@ -120,7 +120,6 @@
                 .register('/sw.js')
                 .then(function () { console.log("Service Worker Registered"); });
         }
-        let deferredPrompt;
         // Prompt A2HS
         window.addEventListener('beforeinstallprompt', (e) => {
             // Prevent Chrome 67 and earlier from automatically showing the prompt
