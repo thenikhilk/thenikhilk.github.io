@@ -1,0 +1,4 @@
+.invalid-feedback,
+.valid-feedback {
+  display: block !important;
+}
