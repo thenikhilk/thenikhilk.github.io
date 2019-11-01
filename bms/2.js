@@ -6,15 +6,24 @@ BMS.Constants = {
     YT_VIDEO: `<div class="preview-pane embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="{src}" allowfullscreen></iframe>
 </div>`,
-    TILE: `
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 video-thumbnail" data-id="{id}">
-    <a href="#" class="d-block mb-4 h-100 text-decoration-none">
-        <img class="img-fluid img-thumbnail" src="{src}" alt="{alt}">
-        <div class="text-info">{name}</div>
-        <div class="overlay">
-            <img class="play-icon mx-auto d-block" src="play-icon.png" alt="Play {alt}">
+    TILE: `<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 d-block mb-4 h-100 video-thumbnail" data-id="{id}">
+    <img src="{src}" alt="{alt}" class="img-fluid img-thumbnail">
+    <div class="overlay">
+        <div class="release-date">
+            {releaseDate}
         </div>
-    </a>
+        <div class="rating">
+            <div>
+                👍 {percent}%
+            </div>
+            <div>
+                {votes} votes
+            </div>
+        </div>
+        <img class="play-icon mx-auto d-block" src="play-icon.png" alt="Play {alt}">
+
+    </div>
+    <div class="text-info">{name}</div>
 </div>`,
 };
 BMS.languages = [];
@@ -152,6 +161,10 @@ BMS.loadTiles = function () {
             tile = tile.split("{alt}").join(name);
             tile = tile.split("{name}").join(name);
             tile = tile.split("{id}").join(key);
+            tile = tile.split("{releaseDate}").join(showDate);
+            tile = tile.split("{percent}").join(likePerc);
+            tile = tile.split("{votes}").join(likeCount);
+
 
             $("#thumbnails").append(tile);
         });
