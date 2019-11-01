@@ -23,7 +23,7 @@ BMS.events = {};
 // Load data
 BMS.loadData = function () {
     $.ajax({
-        url: "/data.json",
+        url: "./data.json",
         success: function (response) {
             BMS.languages = response[0];
             BMS.events = response[1];
