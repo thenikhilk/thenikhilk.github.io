@@ -61,6 +61,34 @@
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js""></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"> </script>
         <script src="2.js"></script>
+    <button onclick="topFunction()" id="scroll-top" title="Go to top" class="btn btn-light">▲</button>
+    <script>
+        //Get the button:
+        let scrollTopButton = document.getElementById("scroll-top");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            window.scrollBy({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>
