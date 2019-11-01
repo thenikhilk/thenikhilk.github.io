@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
 
-    <title>Input Validation</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Trailer Site</title>
     <style>
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" width="30" height="30" alt="Logo">
+        <a class="navbar-brand" href="index">
+            <img src="logo.png" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +40,33 @@
             </ul>
         </div>
     </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js""></script>
-    <script src="2.js"></script>
+    <div id="refiners">
+        <select id="languages" multiple="multiple">
+        </select>
+        <select id="genres" multiple="multiple">
+        </select>
+        <div id="selected-refiners"></div>
+    </div>
+    <div class="container">
+        <div class="jumbotron hidden" id="error-notification">
+            <h1 class="display-4">Oops...</h1>
+            <hr class="my-4">
+            <p>No events available at the moment, please check again later.</p>
+        </div>
+        <div class="row text-center" id="thumbnails">
+
+            <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 video-thumbnail">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://in.bmscdn.com/events/moviecard/ET00046165.jpg" alt="">
+                </a>
+            </div> -->
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js""></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"> </script>
+        <script src="2.js"></script>
 </body>
 
 </html>
