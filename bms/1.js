@@ -48,11 +48,13 @@ BMS.renderResult = function (numbers) {
     let existing = [], toBeAdded = [];
     let result = "";
     $.each(numbers, function (index, number) {
-        if (-1 != EXISTING_VALUES.indexOf(number)) {
-            existing.push(number);
-        }
-        else {
-            toBeAdded.push(number);
+        if (!isNaN(number)) {
+            if (-1 != EXISTING_VALUES.indexOf(number)) {
+                existing.push(number);
+            }
+            else {
+                toBeAdded.push(number);
+            }
         }
     });
     if (toBeAdded.length) {
