@@ -52,7 +52,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		color: #1565C0;
+		color: #2CE8EA;
 		font-family: Rubik,Helvetica,Arial,sans-serif;
 		font-display: auto;
 		font-size: 15pt;
@@ -62,7 +62,7 @@
 	}
 
 	body {
-		background: #1565C0;
+		background: #111111;
 		overflow: hidden;
 	}
 
@@ -181,8 +181,7 @@
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #F4F6F8 url("images/bg.jpg") bottom left;
-		background-repeat: repeat-x;
+		background: #111111 url("images/bg.jpg") bottom left;
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -515,10 +514,18 @@
 			line-height: 1em;
 		}
 
+		#header h1 span {
+			background-color: #111111;
+		}
+
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 0.9;
+		}
+
+		#header p span {
+			background-color: #111111;
 		}
 
 		#header nav {
@@ -630,7 +637,7 @@
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #1565C0;
+					border: solid 1px #2CE8EA;
 					display: block;
 					font-size: 1.75em;
 					height: 2.5em;
@@ -639,6 +646,7 @@
 					text-align: center;
 					top: 0;
 					width: 2.5em;
+					background: #111111;
 				}
 
 				#header nav a:hover {
@@ -646,8 +654,8 @@
 				}
 
 					#header nav a:hover:before {
-						background-color: #1565C0;
-						color: #F4F6F8;
+						background-color: #2CE8EA;
+						color: #111111;
 					}
 
 				#header nav a:active {
@@ -656,8 +664,8 @@
 				}
 
 					#header nav a:active:before {
-						background-color:#1565C0;
-						color: #F4F6F8;
+						background-color:#2CE8EA;
+						color: #111111;
 					}
 
 				#header nav a span {
@@ -937,8 +945,16 @@
 			font-size: 2.5em;
 		}
 
+		#header h1 span {
+			background-color: #111111;
+		}
+
 		#header p {
 			font-size: 1em;
+		}
+
+		#header p span {
+			background-color: #111111;
 		}
 
 		#header nav {
